@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Checkout - Falcon Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-900 text-gray-900">
+    <header class="bg-white py-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Falcon Collections logo" class="h-10" height="200" src="./Screenshot 2024-12-22 170314.png" width="100"/>
+            </div>
+            <nav class="flex space-x-4">
+                <a class="text-black" href="#">Latest arrivals</a>
+                <a class="text-black" href="#">Shoes</a>
+                <a class="text-black" href="#">Thrifts</a>
+            </nav>
+            <div class="flex space-x-4">
+                <a class="text-black" href="#"><i class="fas fa-user"></i></a>
+                <a class="text-black" href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    <main class="bg-white py-8 mt-16">
+        <div class="container mx-auto">
+            <h2 class="text-xl font-semibold mb-4">Checkout</h2>
+            <div class="bg-black p-4 text-white">
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="name">Full Name</label>
+                        <input class="w-full p-2 text-black" id="name" name="name" required type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="email">Email</label>
+                        <input class="w-full p-2 text-black" id="email" name="email" required type="email"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="address">Address</label>
+                        <input class="w-full p-2 text-black" id="address" name="address" required type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="city">City</label>
+                        <input class="w-full p-2 text-black" id="city" name="city" required type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="state">State</label>
+                        <input class="w-full p-2 text-black" id="state" name="state" required type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="zip">Zip Code</label>
+                        <input class="w-full p-2 text-black" id="zip" name="zip" required type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2" for="country">Country</label>
+                        <input class="w-full p-2 text-black" id="country" name="country" required type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2">Payment Method</label>
+                        <div class="flex items-center mb-2">
+                            <input class="mr-2" id="cod" name="payment" required type="radio" value="cod"/>
+                            <label for="cod">Cash on Delivery</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input class="mr-2" id="online" name="payment" required type="radio" value="online"/>
+                            <label for="online">Online Payment</label>
+                        </div>
+                    </div>
+                    <div class="flex justify-end mt-4">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded" type="submit">Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
